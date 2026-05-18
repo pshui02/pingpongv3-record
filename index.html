@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- 1. 瀏覽器標籤頁圖示 (使用高相容性 Emoji SVG) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏓</text></svg>">
+    <link rel="icon" href="icon.png">
     
-    <!-- 2. iOS 蘋果專用高級圖示 (直接使用高解析度乒乓球拍 PNG Base64) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="乒乓紀錄">
-    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAAC37m90AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPbcAABbaSURBVHic7Z17jBxXed+fU9XdMzt7s/v2Omsb22scxwFCSOIQCEIeBAIEKAnvhgQIJS8pDwMh8pAIgVBCwksEQpS8VFEgXvJSgVBC8gICRInDgwAhIY4Tx/glex2vvd5d7+vO7Ex3Vd0fMzs7Ozszu9XdfWf6+0mzo9mdfXpOdX3nO9/5zndOVbAsy7IkSTpWqIidIEnS8WIBIEmXCQYAkpYACwBJukwwAEC6WlAhdqIj46p7H7o2bFlhXWkU3m0YxnYvEPzDMDwN8AsX7BstGfL9wD8KwuClwPP99Z5v1DvvP7q9InYulmXF2gMA9z349atMwzgRhuE6yzCuDwwDAP+E3AIsVwhgH9APbC8EgbX+uYMH+yJnXAgWAKp7H7rWC4LbgI8C6/L90bKkwO8CHgYeWfP8wbXFzqYYCg8A9z30Dbeoqtsh6vWbAnwDuK/We9fGgZfPlDvrIio0ANz30Hcc6gRvhgV60orwN8De7u+2vXf9v/7T9NmxIisUANz9D98QhuFrwWp9xZf9YId/3/bXn3itfFmsGAAsI0S6H7ghDMNuYHWN6g3bZ/e9eNMLN8WKAYD7HrrBD8MvArfXqDbO7wIbeoHffy5y8vEBsAxh6RbwI9U6XN6A7+mFwffFzsA9PvxXwLIsV/uA3wZuG3/pYvj7fS8e7Be5fNUDwD2PftMOWPFlC7iuRvnTwmwIAn9T7YvvSFT1AAClLbgTuA3E9X45fBrwZ3Wre9UBAEqbgL8A1onbXD6/CfxZXYvuxwYAKO0C/pPYyeVwDfDndSv6sQEA6DcA8E/w9/26VfS0ALAtS9gI/C60b/vK5u7gh69f1VAn9uE/2gLsDNi8fH7fMIPbU7wBfFrC6v5uE4RhmMv1Vv86gR/8XNzsc3E8AEC6Ksh+I0iSDgcGAJKWAAsASbpMMAAs0vT09B93dnYORewMHVw6D8YvEiwAdHV1fbWvry97VvG1116js7MTgN7e3qUuWzoPZ0mXwAAsALv3fPGLzGZ7Nq9evZobN27k9OnTRAVNTU00NTVN+P977vneR6fPkhWFAYCHj0S94vChQ4e45ZZbaG5uXvC6q6uLmZmZgWw2S3f3V99U7HzLgQWA09PTfT09PRXLMksg6vXz8/Pcc889fOYzn+Hll18GIJVKUa1W9/X2PvqN6bNmxeA6wOHhD3D99dfT2dlZst7OnTvJZDLX9vb2fm+x8ywHhgHAnDdfmHw+X7K/bds0NDSg6zp1dXWTybyoI146XscDAMvFwsICX/va10p8AsgN/sTERMn+1q1beeGFYV369NfO/Xf7LwP8R4eE6wCHDv/4D/+v1XFjY4OrrrqKT3ziE3zyk5/EMAza29t57WtfS0NDw5D678v6f/0f7p45S1ZszgKA6wAdO3fupL29/bZisUgoFCKRSBAnHA4TCASoVCozMOfw2qX+f/b15X97uTgPADw6fOD7v++Y29bWxqte9SpSqdTtxW欄位安全省略碼=">
+    <link rel="apple-touch-icon" href="icon.png">
 
-    <!-- 3. Android 專用 PWA Manifest (全網址 URL Encoded 處理，徹底防止瀏覽器解析失敗) -->
-    <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E4%B9%96%E4%B9%96%E7%B4%80%E9%8C%84%22%2C%22short_name%22%3A%22%E4%B9%96%E4%B9%96%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23f4f7f9%22%2C%22theme_color%22%3A%22%231a73e8%22%2C%22orientation%22%3A%22portrait%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D">
+    <link rel="manifest" href='data:application/manifest+json,{"name":"乒乓全能紀錄系統","short_name":"乒乓紀錄","start_url":".","display":"standalone","background_color":"#f4f7f9","theme_color":"#1a73e8","orientation":"portrait","icons":[{"src":"icon.png","sizes":"192x192","type":"image/png"},{"src":"icon.png","sizes":"512x512","type":"image/png"}]}'>
 
     <title>🏓 乒乓全能紀錄</title>
 
@@ -89,16 +86,16 @@
 
 <script>
     // ==========================================
-    // 註冊內嵌式 Service Worker (快取控制優化)
+    // 註冊內嵌式 Service Worker
     // ==========================================
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             const swCode = `
-                const CACHE_NAME = 'pingpong-v15-cache';
+                const CACHE_NAME = 'pingpong-v20-cache';
                 self.addEventListener('install', (e) => {
                     e.waitUntil(
                         caches.open(CACHE_NAME).then((cache) => {
-                            return cache.addAll(['./', 'index.html']);
+                            return cache.addAll(['./', 'index.html', 'icon.png']);
                         }).then(() => self.skipWaiting())
                     );
                 });
